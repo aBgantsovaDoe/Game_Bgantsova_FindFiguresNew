@@ -224,7 +224,7 @@ function startPosition(e) {
     const maxY = content1.getBoundingClientRect().top + content1.getBoundingClientRect().height;
     const minX = content1.getBoundingClientRect().left + 5;
     const minY = content1.getBoundingClientRect().top + 5;
-    loc = document.querySelectorAll('.map-location');levelState = "running";
+    loc = document.querySelectorAll('.map-location');
     for(var i = 0; i < loc.length; i++){
       loc[i].style.top =  `${Math.floor((Math.random()*(maxY-minY-loc[i].getBoundingClientRect().height+1)+minY)/window.innerHeight*100)}%`;
       loc[i].style.left = `${Math.floor((Math.random()*(maxX-minX-loc[i].getBoundingClientRect().width+1)+minX)/window.innerWidth*100)}%`;
