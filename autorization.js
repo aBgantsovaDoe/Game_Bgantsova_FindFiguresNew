@@ -34,8 +34,6 @@ localStorage.setItem("usernames", JSON.stringify(usernames));
     window.location.href = 'levels.html';
     // Обновляем список имен на главной странице
     updateUsernameList();
-
-
   }
   
   // Функция для обновления списка имен на главной странице
@@ -51,7 +49,7 @@ localStorage.setItem("usernames", JSON.stringify(usernames));
     usernames[usernames.length-1].score = sessionStorage.getItem("score");
     localStorage.setItem("usernames", JSON.stringify(usernames));
 
-    usernames.sort(   function compareUsers(a, b) {
+    usernames.sort(function compareUsers(a, b) {
         if (a.score > b.score) return -1;
         if (a.score == b.score) return 0;
         if (a.score < b.score) return 1;

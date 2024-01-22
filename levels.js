@@ -224,7 +224,7 @@ function startPosition(e) {
     const maxY = content1.getBoundingClientRect().top + content1.getBoundingClientRect().height;
     const minX = content1.getBoundingClientRect().left + 5;
     const minY = content1.getBoundingClientRect().top + 5;
-    loc = document.querySelectorAll('.map-location');
+    loc = document.querySelectorAll('.map-location');levelState = "running";
     for(var i = 0; i < loc.length; i++){
       loc[i].style.top =  `${Math.floor((Math.random()*(maxY-minY-loc[i].getBoundingClientRect().height+1)+minY)/window.innerHeight*100)}%`;
       loc[i].style.left = `${Math.floor((Math.random()*(maxX-minX-loc[i].getBoundingClientRect().width+1)+minX)/window.innerWidth*100)}%`;
@@ -360,7 +360,6 @@ function startSecondLevel()
         new element(Math.floor(Math.random()*(content2.getBoundingClientRect().left + content2.getBoundingClientRect().width - 200)), Math.floor(Math.random()*(content2.getBoundingClientRect().top + content2.getBoundingClientRect().height - 200)), 45),
         new element(Math.floor(Math.random()*(content2.getBoundingClientRect().left + content2.getBoundingClientRect().width - 200)), Math.floor(Math.random()*(content2.getBoundingClientRect().top + content2.getBoundingClientRect().height - 200)), -135),
         new element(Math.floor(Math.random()*(content2.getBoundingClientRect().left + content2.getBoundingClientRect().width - 200)), Math.floor(Math.random()*(content2.getBoundingClientRect().top + content2.getBoundingClientRect().height - 200)), 315)];
-        
         from_start();
         rotateOnKey();
       
@@ -700,7 +699,7 @@ function GoToNewLevel()
 
 const toRating = function (e) {
     e.preventDefault();
-    if(!button2.classList.contains('hidden'))
+    if(!button2.classList.contains('hidden') || document.querySelector('.level-number').textContent == 3)
     {
     fullScore += scoreFirstLevel;
     sessionStorage.setItem('score',fullScore);
