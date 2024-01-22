@@ -199,9 +199,9 @@ var Task = ["Найдите ВСЕ трегольники", "Найдите ВС
 var TaskHard = ["Найдите ВСЕ треугольники И ВСЕ квадраты", "Найдите ВСЕ трапеции И НЕ треугольники", "Найдите ВСЕ перевернутые фигуры"];
 var randomIndexNew = Math.floor(Math.random() * Task.length);
 if (difficalty == "easy")
-document.querySelector('.task-text').textContent = Task[randomIndexNew];
+{document.querySelector('.task-text').textContent = Task[randomIndexNew];timer(60);}
 else
-document.querySelector('.task-text').textContent = TaskHard[randomIndexNew];
+{document.querySelector('.task-text').textContent = TaskHard[randomIndexNew];timer(30);}
 var nameClass = [{class:"triangle-up", rotate: false, rigthAnswer: false},{class:"square", rotate: false, rigthAnswer: false},{class:"triangle-down", rotate: true, rigthAnswer: false},{class:"trapezoid-up", rotate: false, rigthAnswer: false},{class:"trapezoid-down", rotate: true, rigthAnswer: false},{class:"square-rotate", rotate: true, rigthAnswer: false},{class:"triangle-down", rotate: true, rigthAnswer: false},{class:"square", rotate: false, rigthAnswer: false},{class:"triangle-up", rotate: false, rigthAnswer: false},{class:"trapezoid-up", rotate: false, rigthAnswer: false}];
 var indexNameClass = [0,1,2,3,4,5,6,7,8,9];
 var newlight = document.createElement("div");;
@@ -230,7 +230,6 @@ function startPosition(e) {
       loc[i].style.left = `${Math.floor((Math.random()*(maxX-minX-loc[i].getBoundingClientRect().width+1)+minX)/window.innerWidth*100)}%`;
     };
   } 
-  timer(60);
   levelState = "running";
   button.innerHTML = "Остановить уровень";
   loc = document.querySelectorAll('.map-location');
