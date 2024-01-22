@@ -699,7 +699,7 @@ function GoToNewLevel()
 
 const toRating = function (e) {
     e.preventDefault();
-    if(!button2.classList.contains('hidden') || document.querySelector('.level-number').textContent == 3)
+    if(!button2.classList.contains('hidden') || (document.querySelector('.level-number').textContent == 3 &&  button.innerHTML == "Начать уровень заново"))
     {
     fullScore += scoreFirstLevel;
     sessionStorage.setItem('score',fullScore);
