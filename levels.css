@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: black;
+}
+
+.wrapper {
+    display: flex;
+  }
+  
+  .content, .menu {
+    overflow: hidden;
+    height: 90vh;
+    margin: 5vh 2.5vw;
+    color: #DEDFDF;
+  }
+
+.content
+{
+    position: relative;
+    width: 73%;
+    height: 90vh;
+    background: #EDF5E1;
+    border-radius: 8px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu
+{
+    width: 20%;
+    height: 90vh;
+    margin-left: 0;
+}
+button {
+    border: none;
+    cursor: pointer;
+  }
+  
+  button {
+    line-height: 50px;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+  }
+body
+{
+    background: #5CDE95;
+}
+.light
+{
+  width:100%;
+  height:100%;
+  background: none;
+}
+
+.map-location {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 5%;
+    height: 7%;
+    background: none;
+  }
+  button, .info{
+  background: #05386B;
+  border-radius: 8px;
+  color: #EDF5E1;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  height: 50px;
+  width: 100%;
+  margin-left: 3%;
+  margin-top: 3%;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.6, 0, 0.4, 1);
+  }
+  .info{
+    background-color: #05386B;
+    width: 100%;
+    height: 50%;
+  }
+  .info p {
+    margin: 0;
+    padding: 7px 14px;
+    color: #EDF5E1;
+  }
+  .task-text,.level-number,.name,.difficulty
+  {
+    color: #EDF5E1;
+  }
+
+  .triangle-up {
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    background: none;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid black;
+  }
+
+  .square {
+	width: 50px;
+	height: 50px;
+	background: black;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid black;
+}
+
+.trapezoid-up {
+	border-bottom: 50px solid black;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 50px;
+}
+
+.trapezoid-down {
+    border-top: 50px solid black;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 50px;
+}
+
+.square-rotate {
+    width: 50px;
+    height: 50px;
+    background: black;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+.hidden {
+    display: none;
+  }
+
+  .figure {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    border: 2% dotted black;
+  }
+  
+  .pic {
+    height: 130px;
+    position: absolute;
+    display: none;
+  }
+  .picture {
+    height: 80px;
+    position: absolute;
+    display: none;
+  }
+
+.shar
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+.shar1 {
+    animation: share1 18s linear infinite;
+}
+.shar1_hard {
+    animation: share1 8s linear infinite;
+}
+@keyframes share1 {
+    0%{bottom: 0%; left: 0%;}
+    15%{ bottom: 50%; left:35%;}
+    25%{ bottom: 95%; left:0%;}
+    45%{ bottom: 75%; left:75%;}  
+    50%{ bottom: 95%; left:95%;}   
+    63%{ bottom: 25%; left:75%;}  
+    75%{ bottom: 0%; left:95%;}    
+    88%{ bottom: 13%; left:38%;}
+    100%{ bottom: 0%; left: 0%;}   
+}
+ 
+.shar2 {
+    animation: share2 18s linear infinite;
+}
+.shar2_hard {
+    animation: share2 8s linear infinite;
+}
+@keyframes share2 {
+    0%{bottom: 50%; left: 0%;}
+    12%{bottom: 88%; left:0%;}
+    37%{ bottom: 88%; left:90%;}   
+    63%{bottom: 0%; left:90%;}    
+    88%{bottom: 0%; left:0%;}     
+    100%{bottom: 50%; left: 0%;}  
+}
+ 
+.shar3 {
+    animation: share3 18s linear infinite;
+}
+.shar3_hard {
+    animation: share3 8s linear infinite;
+}
+@keyframes share3 {
+    0%{bottom: 88%; left: 0%;}
+    15%{ bottom: 88%; left:90%;}
+    25%{ bottom: 88%; left:90%;}
+    50%{ bottom: 0%; left:90%;}  
+    63%{ bottom: 75%; left:65%;}   
+    75%{ bottom: 0%; left:0%;} 
+    100%{ bottom: 88%; left: 0%;}  
+}
+ 
+.shar4 {
+    animation: share4 18s linear infinite;
+}
+.shar4_hard {
+    animation: share4 8s linear infinite;
+}
+@keyframes share4 {
+    0%{bottom: 88%; left: 45%;}
+    12%{ bottom: 88%; left:90%;}
+    37%{ bottom: 43%; left:90%;}    
+    63%{ bottom: 85%; left:65%;} 
+    88%{ bottom: 88%; left:0%;}    
+    100%{ bottom: 88%; left:45%;}  
+}
+ 
+.shar5 {
+    animation: share5 18s linear infinite;
+}
+.shar5_hard {
+    animation: share5 8s linear infinite;
+}
+@keyframes share5 {
+    0%{bottom: 88%; left: 90%;}
+    25%{bottom: 54%; left:90%;}
+    50%{bottom: 14%; left:53%;} 
+    75%{ bottom: 88%; left:23%;}    
+    100%{ bottom: 88%; left: 90%;} 
+}
+ 
+.shar6 {
+    animation: share6 18s linear infinite;
+}
+.shar6_hard {
+    animation: share6 8s linear infinite;
+}
+@keyframes share6 {
+    0%{bottom: 50%; left: 90%;}
+    12%{ bottom: 4%; left:100%;}
+    37%{ bottom: 68%; left:25%;} 
+    63%{ bottom: 90%; left:0%;}    
+    88%{ bottom: 12%; left:90%;}   
+    100%{ bottom: 50%; left:55%;}  
+}
+ 
+.shar7 {
+    animation: share7 18s linear infinite;
+}
+.shar7_hard {
+    animation: share7 8s linear infinite;
+}
+@keyframes share7 {
+    0%{bottom: 90%; left: 90%;}
+    25%{ bottom: 0%; left:0%;}
+    50%{bottom: 88%; left:24%;}    
+    75%{ bottom: 23%; left:90%;}   
+    100%{ bottom: 90%; left: 47%;}
+}
+ 

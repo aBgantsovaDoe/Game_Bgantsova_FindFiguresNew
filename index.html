@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторизация</title>
+  <link rel="stylesheet" href="autorization.css">
+</head>
+<body>
+  <form id="authorization" onsubmit="event.preventDefault(); saveUsername();">
+    <input id="easy" name="difficulty" type="radio" value="easy" checked>
+    <label for="easy">Легко</label>
+    <input id="hard" name="difficulty" type="radio" value="hard">
+    <label for="hard">Сложно</label>
+    <div id="wrapper">
+      <div id="arrow"></div>
+        <input type="text" id="username" placeholder="Введите имя пользователя" required>
+        <a href="levels.html"><button type="submit">В игру</button></a>
+    </div>
+  </form>
+  <script src="autorization.js"></script>
+</body>
+</html>
