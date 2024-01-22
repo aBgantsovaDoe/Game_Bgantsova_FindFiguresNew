@@ -291,6 +291,8 @@ body
   position: relative;
   width: 100px;
   height: 100px;
+  margin: auto;
+  margin-top: 10px;
 }
 
 .base-timer__svg {
