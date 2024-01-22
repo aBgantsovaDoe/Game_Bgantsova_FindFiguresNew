@@ -439,7 +439,7 @@ function startSecondLevel()
         {
             case "easy":
                 switch(randomIndexNew)
-                {
+                   {
                     case 0: 
                     for (let i = 1; i < 3; i++) {
                         x += check1(i, i-1);
