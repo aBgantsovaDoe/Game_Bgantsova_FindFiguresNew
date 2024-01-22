@@ -613,7 +613,7 @@ function startPosition(e) {
                     {
                         countTrue++;
                         shar.style.border = "2px solid green";
-                        if (countTrue == 7) finishLevefinishAllGamelSuccess();
+                        if (countTrue == 7) finishAllGame();
                     }
                     else
                     {
